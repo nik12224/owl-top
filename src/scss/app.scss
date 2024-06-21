@@ -1,3 +1,14 @@
+@import './libs/normalize';
+
+@import './components/all';
+
 body {
 	background-color: #f5f6f8;
+}
+
+.wrapper {
+	padding: 33px 22px 0px 22px;
+	display: grid;
+	grid-template-columns: 230px 1200px;
+	column-gap: 30px;
 }

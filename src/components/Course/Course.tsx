@@ -1,7 +1,7 @@
 import React from 'react'
 
-const Course = () => {
-	return <div>Course</div>
+const Course: React.FC = () => {
+	return <div className="container">Course</div>
 }
 
 export default Course

@@ -1,0 +1,30 @@
+.search {
+	max-width: 230px;
+	height: 36px;
+	background-color: #fff;
+	position: relative;
+	padding: 5px 3px 3px 15px;
+	margin-bottom: 29px;
+	border-radius: 5px;
+
+	input {
+		padding-top: 4px;
+		padding-bottom: 4px;
+		max-width: 150px;
+		width: 100%;
+		border: none;
+	}
+
+	.icon {
+		width: 30px;
+		height: 30px;
+		position: absolute;
+		background-color: #7653fc;
+		border-radius: 5px;
+		right: 3px;
+		top: 3px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+}
