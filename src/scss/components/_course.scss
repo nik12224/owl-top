@@ -7,8 +7,7 @@
 	background-color: #fff;
 	border-radius: 5px;
 }
-
-.header {
+.header-course {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -85,7 +84,7 @@
 	}
 }
 
-.body {
+.body--course {
 	padding-top: 22px;
 	p {
 		margin-bottom: 14px;
