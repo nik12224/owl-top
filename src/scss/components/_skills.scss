@@ -1,0 +1,24 @@
+.skills {
+	padding-top: 30px;
+
+	h2 {
+		font-weight: 500;
+		font-size: 22px;
+		line-height: 30px;
+		margin-bottom: 20px;
+	}
+
+	&__container {
+		display: flex;
+		column-gap: 10px;
+
+		span {
+			display: block;
+			border: 1px solid #7653fc;
+			border-radius: 20px;
+			color: #7653fc;
+			min-height: 22px;
+			padding: 3px 15px;
+		}
+	}
+}
