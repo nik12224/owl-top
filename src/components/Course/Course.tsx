@@ -2,6 +2,7 @@ import React from 'react'
 import logo from '../../assets/rectangle.png'
 import avatar from '../../assets/avatar.svg'
 import '../../scss/app.scss'
+import Vacansy from '../Vacansy/Vacansy'
 
 const Course: React.FC = () => {
 	return (
@@ -221,6 +222,7 @@ const Course: React.FC = () => {
 					</div>
 				</form>
 			</div>
+			<Vacansy />
 		</div>
 	)
 }
