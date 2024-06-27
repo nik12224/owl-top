@@ -7,8 +7,12 @@ body {
 	padding-bottom: 100px;
 }
 
+.main {
+	padding: 33px 22px 25px 22px;
+	max-width: 1570px;
+}
+
 .wrapper {
-	padding: 33px 22px 0px 22px;
 	display: grid;
 	grid-template-columns: 230px 1200px;
 	column-gap: 30px;
