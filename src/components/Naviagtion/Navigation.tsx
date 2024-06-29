@@ -1,12 +1,16 @@
+import { useState } from 'react'
 import Search from '../Search/Search'
 
 const Navigation: React.FC = () => {
+	const [open, setOpen] = useState(false)
+	const [subOpen, setsubOpen] = useState(false)
+
 	return (
 		<div className="nav">
 			<Search />
 			<nav>
 				<ul className="nav__list">
-					<li>
+					<li className="nav__item">
 						<svg
 							width="24"
 							height="22"
@@ -22,9 +26,25 @@ const Navigation: React.FC = () => {
 								fill="#7653FC"
 							/>
 						</svg>
-						Курсы
+						<a className={`${open ? 'active' : ''}`} onClick={() => setOpen(!open)}>
+							Курсы
+						</a>
+						<ul className={`nav__sublist ${open ? 'nav__sublist--active' : ''}`}>
+							<li className="nav__subitem">
+								<a onClick={() => setsubOpen(!subOpen)}>Дизайн</a>
+								<ul className={`nav__sub-sublist ${subOpen ? 'nav__sub-sublist--active' : ''}`}>
+									<li>Photoshop</li>
+									<li>AfterEffect</li>
+									<li>Illustrator</li>
+									<li>Figma</li>
+								</ul>
+							</li>
+							<li className="nav__subitem">РАЗРАБОТКА</li>
+							<li className="nav__subitem">АНАЛИТИКА</li>
+							<li className="nav__subitem">МАРКЕТИНГ</li>
+						</ul>
 					</li>
-					<li>
+					<li className="nav__item">
 						<svg
 							width="19"
 							height="13"
@@ -38,7 +58,7 @@ const Navigation: React.FC = () => {
 						</svg>
 						Сервисы
 					</li>
-					<li>
+					<li className="nav__item">
 						<svg
 							width="24"
 							height="23"
@@ -64,7 +84,7 @@ const Navigation: React.FC = () => {
 						</svg>
 						Книги
 					</li>
-					<li>
+					<li className="nav__item">
 						<svg
 							width="24"
 							height="23"
